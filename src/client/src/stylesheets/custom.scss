@@ -1,0 +1,340 @@
+/*** VARIABLE ***/
+
+/*** --colors ***/
+$text-muted: #6c757d!important;
+/*** --input ***/
+$max-log-width: 470px;
+
+
+a {
+  color: $concord-blue;
+}
+p {
+  margin-bottom: .3rem;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.only-bottom-border {
+  border-top: none!important;
+  border-left: none!important;
+  border-right: none!important;
+  border-radius: 0;
+}
+.text-muted {
+  color: $text-muted;
+}
+.text-primary {
+  color: $concord-blue;
+}
+.col-centered {
+  float: none!important;
+  margin: 0 auto;
+}
+.info-view {
+  border-bottom: 1px solid #f7f7f7;
+  min-height: 200px;
+  font-size: 1rem;
+  margin: .2rem;
+  padding: 1.25rem 1.25rem 0 1.25rem;
+  //ul li.view-text-marked {
+  //  padding: 0 2rem;
+  //  background: #c5ddf0;
+  //}
+}
+.card-background-logo {
+  position: relative;
+  z-index: 1;
+}
+.card-background-logo:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/images/graphic/graph_op.svg") no-repeat right top;
+  background-size: 60%;
+  opacity: .8;
+}
+
+/*** FORM ***/
+.form-control {
+  border: 1px solid #E9E9F0;
+  font-weight: 300;
+  font-size: 14px;
+  &:focus{
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 0.2rem #1c75ba40;
+  }
+  &:hover {
+    border-color: #40a9ff;
+    border-right-width: 1px !important;
+  }
+}
+.css-b7t0eq {
+  cursor: text!important;
+  &:focus{
+    border-color: #40a9ff!important;
+    box-shadow: 0 0 0 0.2rem #1c75ba40!important;
+  }
+  &:hover {
+    border-color: #40a9ff!important;
+    border-right-width: 1px !important;
+  }
+}
+.css-1ep9fjw {
+  cursor: pointer;
+}
+.max-log-width {
+  max-width: $max-log-width;
+}
+.form-img {
+  height: 45px;
+}
+.form-group {
+  label {
+    font-weight: 400;
+  }
+}
+ul.list-inline {
+  margin-bottom: 0;
+  label {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+/*** BUTTONS ***/
+.btn {
+  border-radius: 1rem;
+  line-height: 1.75rem;
+  padding: .0625rem .75rem;
+  -webkit-transition: background 150ms ease-out 0s,border-color 150ms ease-out 0s,color 150ms ease-out 0s,box-shadow 150ms ease-out 0s;
+  -moz-transition: background 150ms ease-out 0s,border-color 150ms ease-out 0s,color 150ms ease-out 0s,box-shadow 150ms ease-out 0s;
+  -ms-transition: background 150ms ease-out 0s,border-color 150ms ease-out 0s,color 150ms ease-out 0s,box-shadow 150ms ease-out 0s;
+  -o-transition: background 150ms ease-out 0s,border-color 150ms ease-out 0s,color 150ms ease-out 0s,box-shadow 150ms ease-out 0s;
+  transition: background 150ms ease-out 0s,border-color 150ms ease-out 0s,color 150ms ease-out 0s,box-shadow 150ms ease-out 0s;
+  vertical-align: top;
+  font-weight: 700;
+  svg {
+    vertical-align: text-top;
+  }
+}
+.btn-primary {
+  background-color: $concord-blue;
+  border-color: $concord-blue;
+  &:hover {
+    background-color: #007dcc;
+    border-color: transparent;
+  }
+}
+
+/*** LOGIN BUTTONS ***/
+.login-form .btn-secondary:not(:disabled):not(.disabled).active,
+.login-form .btn-secondary:not(:disabled):not(.disabled):active,
+.login-form .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: $concord-blue;
+  border-color: $concord-blue;
+}
+.login-form .btn-primary {
+  background-color: $concord-blue;
+  border-color: $concord-blue;
+  border-radius: 30px;
+  padding: .375em 4.6em;
+  &:hover {
+    background-color: $concord-blue;
+    border-color: $concord-blue;
+    transition: 0.3s;
+    opacity: 0.8;
+  }
+}
+.login-form .btn-secondary {
+  color: $concord-blue;
+  background-color: transparent;
+  border-color: $concord-blue;
+  border-radius: 30px;
+  padding: .375em 4.6em;
+  &:hover {
+    background-color: $concord-blue;
+    border-color: $concord-blue;
+    color: #ffffff;
+    transition: 0.3s;
+    opacity: 0.8;
+  }
+}
+button.ferris-link a {
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+/*** CIRCURAL BUTTONS ***/
+.btn-circle {
+  padding: 0;
+  border-radius: 50px;
+  height: 24px;
+  width: 24px;
+  line-height: 1.42857;
+}
+
+/*** CARD ***/
+.card {
+  border: none;
+  border-radius: .5rem;
+  .card-header {
+    background-color: $primary-color;
+    color: $white-color;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom: 1px solid $primary-color;
+  }
+  .card-header:first-child {
+    border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0;
+  }
+}
+.card.info {
+  .card-body {
+    padding: .25rem 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+/***** Login *****/
+.login-form .card{
+  margin: 50px auto;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+}
+.login-form .card-block {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*** TABLE ***/
+.table {
+  margin-bottom: 0;
+  td, th {
+    padding: .5rem;
+  }
+}
+.add-btn {
+  color: $concord-blue;
+  padding-left: 0;
+  svg {
+    vertical-align: text-top;
+  }
+  &:hover {
+    color: darken($concord-blue, 10%);
+    text-decoration: none;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+  }
+}
+//ReactTable
+.ReactTable.custom-height {
+  background: $white-color;
+  height: calc(100vh - 140px);
+}
+.ReactTable.-striped .rt-tr.-odd {
+  background: rgb(255, 255, 255);
+}
+.ReactTable .rt-thead .rt-resizable-header {
+  letter-spacing: .5px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.border-all-rounded {
+  border-radius: 5px;
+}
+.border-bottom-rounded {
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.ReactTable {
+  border: 1px solid rgba(50, 50, 50, 0.6);
+  .ReactTable .rt-thead .rt-tr {
+    margin-right: 15px;
+  }
+  .ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover {
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+  }
+}
+.ReactTable .-pagination {
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  box-shadow: none!important;
+}
+div.rt-tr {
+  align-items: center;
+  padding: 0 10px;
+}
+
+/***** Profile *****/
+.profile-page {
+  max-width: 800px;
+
+  .card-profile {
+    //width: 340px;
+    //margin: 50px auto;
+    background-color: #f8f9fa;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 1em 1em 2em rgba(0,0,0,.2);
+
+    .card-img-top {
+      border-radius: 0;
+    }
+    .card-block {
+      margin: 0 1em;
+      .card-img-profile {
+        max-width: 60%;
+        border-radius: 50%;
+        margin-top: -95px;
+        border: 5px solid #f8f9fa;
+      }
+    }
+    .card-title {
+
+      small {
+        display: block;
+        font-size: .6em;
+        margin-top: .2em;
+      }
+    }
+  }
+
+  .personal-info {
+    h3 {
+      position: absolute;
+      color: #fff;
+      padding: 10rem 1.25rem 1.25rem;
+    }
+  }
+}
+
+// ANT DESIGN
+
+.ant-input {
+  height: calc(2.25rem + 2px);
+  font-weight: 300;
+}
+
+@media (max-width: 576px) {
+  .footer-text.second-text {
+    display: none;
+  }
+  .login-form .card {
+    margin: 25px auto;
+    box-shadow: 0em 0em .5em rgba(0, 0, 0, 0.2);
+  }
+}

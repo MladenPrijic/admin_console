@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  client:
+    container_name: admin-client
+    build:
+    # build from Dockerfile
+      context: ./client
+      dockerfile: Dockerfile-prod
+    ports:
+     - "80:80"
+  api:
+    container_name: admin-api
+    environment:
+     - NODE_ENV=prod
+    build:
+    # build from Dockerfile
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+     - "8080:8080"
